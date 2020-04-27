@@ -1,6 +1,6 @@
 # Make your Research Findable
 
-[prev](SpreadsheetAnnotation2.md) | [toc](./README.md)
+[prev](SpreadsheetAnnotation2.md) | [toc](./README.md) | [next](rdf.md)
 
 <script>
   function toggleAnswer(id) {
@@ -84,6 +84,6 @@ new DOI with [this submission form](https://www.nanosafetycluster.eu/outputs/pub
 
 ---
 
-[prev](SpreadsheetAnnotation2.md) | [toc](./README.md)
+[prev](SpreadsheetAnnotation2.md) | [toc](./README.md) | [next](rdf.md)
 
 Copyright 2020 (C) Egon Willighagen - CC-BY Int. 4.0
