@@ -11,7 +11,7 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
 * Spreadsheet Annotation
    * [First hack round](SpreadsheetAnnotation.md)
       * A Demo Spreadsheet
-      * Exercise 1: Browsing the eNanoMapper ontology with BioPortal
+          * Exercise 1: Browsing the eNanoMapper ontology with BioPortal
       * Annotating the columns
       * Annotating the values
    * [Second hack round](SpreadsheetAnnotation2.md)
