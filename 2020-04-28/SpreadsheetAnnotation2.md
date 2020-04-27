@@ -10,7 +10,15 @@ Some years ago, the concept of [Bring Our Own Data (BYOD) meetings](https://www.
 was coined. This part of this workshop is basically a BYOD session. In this hackathon you will apply the
 approaches of the [previous session](SpreadsheetAnnotation.md) to your own data.
 
-Importantly, your data does not have to be a spreadsheet. It can be in a different format too.
+**Importantly**, your data does not have to be a spreadsheet. It can be in a different format too.
+Second, the amount of data is not important.
+
+What your data does have to comply with, is the following:
+
+1. it is already published and can be publically shared
+2. the data is yours
+
+### Goal of this hackathon
 
 Furthermore, the goal of this excersize is not annotate everything in full detail. That takes more
 effort and commonly still results in research papers and projects get European funding to undertake
