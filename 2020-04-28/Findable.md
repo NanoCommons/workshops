@@ -74,6 +74,13 @@ After you logged in, follow the [Upload link](https://zenodo.org/deposit) and th
 
 ![Zenodo upload page](zenodo_upload.png)
 
+## Announcing your data with the EU NanoSafety Cluster
+
+The last step is to announce your new (or old) data deposit with the EU NanoSafety Cluster
+(if you participate in one of the associated projects). You can do that simply by providing the
+new DOI with [this submission form](https://www.nanosafetycluster.eu/outputs/public-deliverables-publications/), which looks like this:
+
+![NSC Submission page](eunsc_doi_announce.png)
 
 ---
 
