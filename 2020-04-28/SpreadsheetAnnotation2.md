@@ -49,7 +49,7 @@ with
 
 ## Plenary Step 3: Joint Group Reflection/Summary
 
-Please go to ...
+Please go to https://app.wooclap.com/NANOCOMMONS
 
 ---
 
