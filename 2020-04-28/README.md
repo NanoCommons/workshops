@@ -18,8 +18,11 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
 This workshop is developed within  [NanoCommons](https://www.nanocommons.eu/) with funding from
 European Union Horizon 2020 Programme (H2020) under grant agreement nº [731032](https://cordis.europa.eu/project/rcn/212586/en).
 
+The content of this workshop is based on an earlier 
+[workshop at an OpenRiskNet even](https://openrisknet.github.io/workshop/OntologyWorkshop/).
+
 ---
 
 [toc](./README.md) | [next](SpreadsheetAnnotation.md)
 
-Copyright 2020 (C) Egon Willighagen - CC-BY Int. 4.0
+Copyright 2019-2020 (C) Egon Willighagen - CC-BY Int. 4.0
