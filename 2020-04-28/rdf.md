@@ -1,4 +1,4 @@
-# Creating an eNanoMapper data set in RDF
+# Creating an nanosafety data set in RDF
 
 [prev](Findable.md) | [toc](./README.md)
 
