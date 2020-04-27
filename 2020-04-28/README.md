@@ -18,6 +18,11 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
           * Exercise 3: Use BioPortal to find matching ontology terms
       * Annotating the value units
    * [Second hack round](SpreadsheetAnnotation2.md)
+      * Your Own Data
+          * Goal of this hackathon
+      * Step 1: what are the key concepts in your data?
+      * Step 2: how can your data be made more uniform?
+      * Plenary Step 3: Joint Group Reflection/Summary
 * [Make your Research Findable](Findable.md)
 
 ### Acknowledgments
