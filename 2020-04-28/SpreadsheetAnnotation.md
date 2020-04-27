@@ -77,9 +77,12 @@ go to the BioPortal front page and search in all ontologies.
 
 #### Questions
 
+Here are some examples searches and matches:
+
 1. What is the ontology term IRI for `label`? <button onclick="toggleAnswer('q3')">Answer</button><span id="q3" style="visibility: hidden"> It is not http://purl.obolibrary.org/obo/CHEBI_35209, which is reserved to chemical groups that are used as tracer, such as fluorescent groups. 'Name' is in the eNanoMapper ontology with IRI 	
 http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C42614 and that is a good fit. Arguable, 'molecular entity name' is a better match, as it has more semantic meaning.</span>
-2. 
+2. What is the ontology term IRI for `size`? <button onclick="toggleAnswer('q4')">Answer</button><span id="q4" style="visibility: hidden"> Particle size is http://purl.bioontology.org/ontology/npo#NPO_1694 but one should wonder what kind of particle size was meant here? How was it measured? What is the shape of the particle?</span>
+3. What is the ontology term IRI for `size`? <button onclick="toggleAnswer('q5')">Answer</button><span id="q5" style="visibility: hidden"> The closest match in ENM is 'descriptor': http://purl.enanomapper.org/onto/ENM_8000019 but the OBI has a specific term for DOi with IRI http://purl.obolibrary.org/obo/OBI_0002110 (found via the BioPortal front page search).</span>
 
 ## Annotating the values
 
@@ -96,11 +99,12 @@ The procedure is the same as before.
 
 1. What is the ontology term IRI for CeO2? <button onclick="toggleAnswer('q10')">Answer</button><span id="q10" style="visibility: hidden"> http://purl.enanomapper.org/onto/ENM_9000006</span>
 2. What is the ontology term IRI for Se? <button onclick="toggleAnswer('q11')">Answer</button><span id="q11" style="visibility: hidden"> http://purl.enanomapper.org/onto/ENM_9000244</span>
-
+3. What is the ontology term IRI for PC3? <button onclick="toggleAnswer('q12')">Answer</button><span id="q12" style="visibility: hidden"> http://www.ebi.ac.uk/efo/EFO_0002074</span>
+4. What is the ontology term IRI for L929? <button onclick="toggleAnswer('q13')">Answer</button><span id="q13" style="visibility: hidden"> The current eNanoMapper ontology does not have this cell line, but the Cell Line Ontology does: http://purl.obolibrary.org/obo/CLO_0007219 You can find this term by searching for L929 on the BioPortal front page.</span>
 
 ## Annotating the value units
 
-Finally, the spreadsheet also lists a few units (mV, nm). It is left to the participant to look these up
+Finally, the spreadsheet also lists a few units (mV, nm, h). It is left to the participant to look these up
 in ontologies. Here, the [Units of Measurement Ontology](http://bioportal.bioontology.org/ontologies/UO/)
 (UO) might be useful.
 
