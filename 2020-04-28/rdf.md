@@ -1,4 +1,4 @@
-# Exercise 5: creating an eNanoMapper data set in RDF
+# Creating an eNanoMapper data set in RDF
 
 [prev](Findable.md) | [toc](./README.md)
 
@@ -38,7 +38,7 @@ are called `namespaces` in RDF documents.
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 ```
 
-## Info about us
+## Info about you
 
 The first bit of information that a FAIR data set needs, is a bit of information about the data set.
 
@@ -156,4 +156,4 @@ this with one of the Workshop assistents.
 
 [prev](Findable.md) | [toc](./README.md)
 
-Copyright 2019 (C) Egon Willighagen - CC-BY Int. 4.0
+Copyright 2019-2020 (C) Egon Willighagen - CC-BY Int. 4.0
