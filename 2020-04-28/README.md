@@ -24,6 +24,17 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
       * Step 2: how can your data be made more uniform?
       * Plenary Step 3: Joint Group Reflection/Summary
 * [Make your Research Findable](Findable.md)
+   * Literature and keyword annotation
+      * Searching in Scholia
+      * Linking your article in Wikidata to 'main subjects'
+   * Make your data more findable
+      * Announcing your data with the EU NanoSafety Cluster
+* [Ccreating an nanosafety data set in RDF](rdf.md)
+   * Info about you
+   * Info about your nanomaterial
+   * Adding the size of your material
+   * Linking the particle to your article
+   * Uploading the RDF to the OpenRiskNet cloud
 
 ### Acknowledgments
 
