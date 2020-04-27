@@ -27,11 +27,15 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
 
 ### Acknowledgments
 
-This workshop is developed within  [NanoCommons](https://www.nanocommons.eu/) with funding from
-European Union Horizon 2020 Programme (H2020) under grant agreement nº [731032](https://cordis.europa.eu/project/rcn/212586/en).
-
-The content of this workshop is based on an earlier 
-[workshop at an OpenRiskNet event](https://openrisknet.github.io/workshop/OntologyWorkshop/).
+This workshop is based on an [earlier workshop](https://openrisknet.github.io/workshop/OntologyWorkshop/)
+held within [OpenRiskNet](https://openrisknet.org/) with funding from European Commission within Horizon2020 
+EINFRA-22-2016 Programme under grant agreement nº 731075, 
+but continued by and for [NanoCommons](https://www.nanocommons.eu/) with funding from European Union Horizon 2020 Programme (H2020)
+under grant agreement nº [731032](https://cordis.europa.eu/project/rcn/212586/en),
+[NanoSolveIT](https://www.nanosolveit.eu/) with funding from the European Union Horizon 2020 Programme (H2020)
+under grant agreement nº 814572,
+and [Scholia](https://tools.wmflabs.org/scholia/) with funding from the Alfred P. Sloan Foundation under
+grant agreement G-2019-11458.
 
 ---
 
