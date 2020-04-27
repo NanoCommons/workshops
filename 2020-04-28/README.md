@@ -13,7 +13,10 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
       * A Demo Spreadsheet
           * Exercise 1: Browsing the eNanoMapper ontology with BioPortal
       * Annotating the columns
+          * Exercise 2: Use BioPortal to find matching ontology terms
       * Annotating the values
+          * Exercise 3: Use BioPortal to find matching ontology terms
+      * Annotating the value units
    * [Second hack round](SpreadsheetAnnotation2.md)
 * [Make your Research Findable](Findable.md)
 
