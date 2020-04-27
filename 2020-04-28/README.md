@@ -8,8 +8,10 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
 
 ---
 
-* First and second hack round: [Spreadsheet Annotation](SpreadsheetAnnotation.md)
-* Third hack round: [Make your Research Findable](Findable.md)
+* Spreadsheet Annotation
+   * [First hack round](SpreadsheetAnnotation.md)
+   * [Second hack round](SpreadsheetAnnotation2.md)
+* [Make your Research Findable](Findable.md)
 
 ### Acknowledgments
 
@@ -20,4 +22,4 @@ European Union Horizon 2020 Programme (H2020) under grant agreement nº [731032]
 
 [toc](./README.md) | [next](SpreadsheetAnnotation.md)
 
-Copyright 2019 (C) Egon Willighagen - CC-BY Int. 4.0
+Copyright 2020 (C) Egon Willighagen - CC-BY Int. 4.0
