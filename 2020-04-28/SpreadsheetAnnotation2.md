@@ -24,6 +24,9 @@ With the demo spreadsheet in mind, you will go through the following steps and q
 down your answers: they are basically part of your labnotebooks. Some questions may not (yet) have
 an answer. These questions can be asked.
 
+At the ends of this session, we will have plenary step where we will go through the question
+with 
+
 ## Step 1: what are the key concepts in your data?
 
  * with what physicochemical properties are your nanomaterials described?
@@ -35,6 +38,10 @@ an answer. These questions can be asked.
 
  * do you use a data management plan (DMP)? what file formats does it require you to use?
  * is your data provided in single tables or provided in more than one table?
+
+## Plenary Step 3: Joint Group Reflection/Summary
+
+Please go to ...
 
 ---
 
