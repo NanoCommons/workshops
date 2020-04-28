@@ -29,7 +29,7 @@ Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.
       * Linking your article in Wikidata to 'main subjects'
    * Make your data more findable
       * Announcing your data with the EU NanoSafety Cluster
-* [Ccreating an nanosafety data set in RDF](rdf.md)
+* [Creating an nanosafety data set in RDF](rdf.md)
    * Info about you
    * Info about your nanomaterial
    * Adding the size of your material
