@@ -4,6 +4,8 @@
 
 Material for the **Annotating Your Experimental Data workshop**, 28 April 2020.
 
+Webinar slides have been [archived at Zenodo](https://zenodo.org/record/3772185).
+
 Go to [https://nanocommons.github.io/workshops/2020-04-28/](https://nanocommons.github.io/workshops/2020-04-28/)
 
 ---
