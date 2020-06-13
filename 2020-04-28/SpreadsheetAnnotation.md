@@ -110,7 +110,7 @@ in ontologies. Here, the [Units of Measurement Ontology](http://bioportal.bioont
 
 ## References
 
-* Labouta HI, Asgarian N, Rinker K, Cramb DT. Meta-Analysis of Nanoparticle Cytotoxicity via Data-Mining the Literature. ACS Nano. 2019 Jan 31; doi:[10.1021/acsnano.8b07562](https://doi.org/10.1021/acsnano.8b07562) ([Scholia](https://tools.wmflabs.org/scholia/work/Q69534939))
+* Labouta HI, Asgarian N, Rinker K, Cramb DT. Meta-Analysis of Nanoparticle Cytotoxicity via Data-Mining the Literature. ACS Nano. 2019 Jan 31; doi:[10.1021/acsnano.8b07562](https://doi.org/10.1021/acsnano.8b07562) ([Scholia](https://scholia.toolforge.org/work/Q69534939))
 
 ---
 
