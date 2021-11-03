@@ -1,5 +1,9 @@
 # Ontology Workshop 2021
 
+Material for the 8/9 December 2021 workshop.
+
+Go to https://nanocommons.github.io/workshops/2021-12-08/
+
 ## Sign up
 
 ## Programme
