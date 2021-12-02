@@ -14,7 +14,7 @@ The workshop will be spread out over two afternoons on the 8th and 9th of Decemb
 
 Click the links below to go directly to the hands-on session webpages:
 - [SPARQl workshop]()
-- [SPARQL endpoint workshop](https://nanocommons.github.io/workshops/2021-12-08/SPARQL)
+- [SPARQL endpoint workshop](https://nanocommons.github.io/workshops/2021-12-08/SPARQLendpoint)
 - [Ontology workshop](https://nanocommons.github.io/workshops/2021-12-08/Ontology)
 
 <img src="agenda.jpg">
