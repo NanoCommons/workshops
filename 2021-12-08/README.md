@@ -1,7 +1,7 @@
 # Workshop 
 ## Nanosafety and the semantic web: from natural language to computational processing
 
-Go to https://nanocommons.github.io/workshops/2021-12-08/
+Go to [https://nanocommons.github.io/workshops/2021-12-08/](https://nanocommons.github.io/workshops/2021-12-08/)
 
 ## Introduction
 
