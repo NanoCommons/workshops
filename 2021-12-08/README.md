@@ -12,3 +12,4 @@ We are therefore organizing a workshop covering the whole range of Semantic Appr
 ## Agenda
 The workshop will be spread out over two afternoons on the 8th and 9th of December from 13.00-17.00h. The afternoons will be filled with a mixture of lectures, tutorials, hands-on and Q&A sessions. 
 
+<img src="agenda.jpg">
