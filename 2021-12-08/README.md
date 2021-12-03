@@ -13,7 +13,7 @@ We are therefore organizing a workshop covering the whole range of Semantic Appr
 The workshop will be spread out over two afternoons on the 8th and 9th of December from 13.00-17.00h. The afternoons will be filled with a mixture of lectures, tutorials, hands-on and Q&A sessions. 
 
 Click the links below to go directly to the hands-on session webpages:
-- [SPARQL introduction workshop]()
+- [SPARQL introduction workshop](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
 - [SPARQL endpoint workshop](https://nanocommons.github.io/workshops/2021-12-08/SPARQLendpoint)
 - [Ontology workshop](https://nanocommons.github.io/workshops/2021-12-08/Ontology)
 
