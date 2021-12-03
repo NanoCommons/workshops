@@ -35,14 +35,15 @@ WHERE {
 When copying this SPARQL query and executing it, you will find that the AOP-Wiki RDF contains 1149 KE subjects.
 
 Based on the RDF schema, you should be able to create SPARQL queries that count:
-- Adverse Outcome Pathways - <button onclick="toggleAnswer('q2')">Answer</button><span id="q2" style="visibility: hidden">333</span>
+- Adverse Outcome Pathways - <button onclick="toggleAnswer('q1')">Answer</button><span id="q1" style="visibility: hidden">333</span>
 - Chemicals - <button onclick="toggleAnswer('q2')">Answer</button><span id="q2" style="visibility: hidden">329</span>
-- Key Event Relationships - <button onclick="toggleAnswer('q2')">Answer</button><span id="q2" style="visibility: hidden">1382</span>
+- Key Event Relationships - <button onclick="toggleAnswer('q3')">Answer</button><span id="q3" style="visibility: hidden">1382</span>
 
 Slightly more complex, can you count how many Key Events have a description?
-<button onclick="toggleAnswer('q2')">Hint</button><span id="q2" style="visibility: hidden">Define subject as type "Key Event" and also retrieve its description.</span>
+<button onclick="toggleAnswer('q4')">Hint</button><span id="q4" style="visibility: hidden">Define subject as type "Key Event" and also retrieve its description.</span>
 
-<button onclick="toggleAnswer('q2')">Answer</button><span id="q2" style="visibility: hidden">389 Key Events exist that have a description.</span>
+<button onclick="toggleAnswer('q5')">Answer</button><span id="q5" style="visibility: hidden">389 Key Events exist that have a description.</span>
 
+### Exercise 2 - More detailed exploration
 
 
