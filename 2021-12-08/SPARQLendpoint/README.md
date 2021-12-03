@@ -4,11 +4,11 @@
 At the department of bioinformatics (BiGCaT) at Maastricht University, we host several SPARQL endpoints for biological data that exists as RDF. This workshop assumes that you already know the basics of SPARQL and RDF. For an introduction to SPARQL and RDF, please have a look at [this beginners course on SPARQL](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/) first. 
 
 The SPARQL endpoints that BiGCaT hosts are:
-- WikiPathways
-- [AOP-Wiki RDF](https://aopwiki.rdf.bigcat-bioinformatics.org/) - [Exercises](./AOP-Wiki.md)
+- [WikiPathways](https://sparql.wikipathways.org/)
+- [AOP-Wiki RDF](https://aopwiki.rdf.bigcat-bioinformatics.org/)
 - [Nanosafety RDF](https://nanosafety.rdf.bigcat-bioinformatics.org/)
-- ChEMBL RDF
-- SbD4Nano Landscape
+- [ChEMBL RDF]
+- [SbD4Nano Landscape](https://sbd4nanolandscape.rdf.bigcat-bioinformatics.org/sparql)
 
 ## Descriptions of SPARQL endpoints
 ### WikiPathways
@@ -26,4 +26,10 @@ bla
 ### SbD4Nano Landscape 
 bla
 
+## Exercises
+- [WikiPathways]()
+- [AOP-Wiki RDF](./AOP-Wiki.md)
+- [Nanosafety RDF]()
+- [ChEMBL RDF]()
+- [SbD4Nano Landscape]()
 
