@@ -5,7 +5,7 @@ At the department of bioinformatics (BiGCaT) at Maastricht University, we host s
 
 The SPARQL endpoints that BiGCaT hosts are:
 - WikiPathways
-- AOP-Wiki RDF
+- [AOP-Wiki RDF](https://aopwiki.rdf.bigcat-bioinformatics.org/)
 - Nanosafety RDF
 - ChEMBL RDF
 - SbD4Nano Landscape
@@ -15,6 +15,7 @@ The SPARQL endpoints that BiGCaT hosts are:
 bla
 
 ### AOP-Wiki RDF
+[Exercises](./AOP-Wiki.md)
 bla
 
 ### Nanosafety RDF
