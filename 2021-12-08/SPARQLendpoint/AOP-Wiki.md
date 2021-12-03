@@ -45,5 +45,11 @@ Slightly more complex, can you count how many Key Events have a description?
 <button onclick="toggleAnswer('q5')">Answer</button><span id="q5" style="visibility: hidden">389 Key Events exist that have a description.</span>
 
 ### Exercise 2 - More detailed exploration
+- which chemicals are related to stressor X
+- which AOP is related to stressor X
+- Which chemical is linked to AOP Y through stressor Y?
 
-
+### Exercise 3 - Complete graph exploration
+From AO X, which MIE?
+How many AOPs have KEx as MIE
+What AOs can stressor Y lead to?
