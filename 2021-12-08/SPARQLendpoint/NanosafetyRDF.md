@@ -40,7 +40,7 @@ select distinct ?KE where {
 }
 ```
 
-When copying this SPARQL query and executing it, you will find that the AOP-Wiki RDF contains 1149 KE subjects.
+When copying this SPARQL query and executing it, you will see the KE id's that are mentioned in the Nanosafety RDF. Of course these are hard to interpret. In the RDF schema you can see that the RDF also contains an MIE/KE text. This is the name of the KE as mentioned in the paper.
 
 Modify the above query to select the MIE/KE text. Which predicate do you use: - <button onclick="toggleAnswer('q1')">Answer</button><span id="q1" style="visibility: hidden">nci:C25492</span>
 
