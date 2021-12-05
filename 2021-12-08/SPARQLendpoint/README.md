@@ -29,7 +29,7 @@ bla
 ## Exercises
 - [WikiPathways]()
 - [AOP-Wiki RDF](./AOP-Wiki.md)
-- [Nanosafety RDF]()
+- [Nanosafety RDF](./NanosafetyRDF.md)
 - [ChEMBL RDF]()
 - [SbD4Nano Landscape]()
 
