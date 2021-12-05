@@ -42,12 +42,7 @@ select distinct ?KE where {
 
 When copying this SPARQL query and executing it, you will find that the AOP-Wiki RDF contains 1149 KE subjects.
 
-Modify the above query to select the MIE/KE text. Which predicate do you use: - <button onclick="toggleAnswer('q1')">Answer</button><span id="q1" style="visibility: hidden">
-```SPARQL
-select distinct ?KE where { 
-    ?s nci:C25492 ?KE .
-}
-```</span>
+Modify the above query to select the MIE/KE text. Which predicate do you use: - <button onclick="toggleAnswer('q1')">Answer</button><span id="q1" style="visibility: hidden">nci:C25492</span>
 
 ### Exercise 2 - counting of subjects
 
