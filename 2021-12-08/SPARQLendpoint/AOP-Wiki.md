@@ -23,7 +23,7 @@ The AOP-Wiki SPARQL endpoint is accessible on [https://aopwiki.rdf.bigcat-bioinf
 
 
 ## Exercises
-### Exercise 1 - listing of subjects
+### Exercise 1 - Listing of subjects
 The simplest SPARQL queries to explore RDF is to retrieve full lists of subjects of a particular type, which is frequently defined with the predicate `rdfs:type` or `a` which can be used interchangably. See the below example of listing all Key Events.
 
 ```sparql
@@ -55,7 +55,7 @@ WHERE {
 - Question 1.4: What would we need to add to the query to extract the measurement/method description of the Key Events? 
 - <button onclick="toggleAnswer('q1.4')">Answer</button><span id="q1.4" style="visibility: hidden">Adding another variable to the `SELECT` list and requesting that variable by adding in the query `?KE mmo:0000000 ?[new variable name]`. This should return a table with the added column.</span>
 
-### Exercise 2 - counting of subjects
+### Exercise 2 - Counting of subjects
 This exercise is about creating simple SPARQL queries that count particular types of subjects in the RDF. See the example SPARQL query below that counts the number of Key Events in the RDF.
 
 ```sparql
