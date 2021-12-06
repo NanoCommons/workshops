@@ -30,7 +30,7 @@ Adverse Outcome Pathways (AOPs) have been proposed to explore interactions of ch
 ## Exercises
 
 ### Exercise 1 - listing of subjects
-This first exercise is about creating simple SPARQL queries that count particular types of subjects in the RDF. See the example SPARQL query below that counts the number of Key Events in the RDF.
+This first exercise is about creating simple SPARQL queries that list particular types of subjects in the RDF. See the example SPARQL query below to see the KE identifiers in the Nanosafety RDF.
 
 ```SPARQL
 PREFIX sio: <http://semanticscience.org/resource/>
@@ -42,23 +42,15 @@ select distinct ?KE where {
 
 When copying this SPARQL query and executing it, you will see the KE id's that are mentioned in the Nanosafety RDF. Of course these are hard to interpret. In the RDF schema you can see that the RDF also contains an MIE/KE text. This is the name of the KE as mentioned in the paper.
 
-Modify the above query to select the MIE/KE text. Which predicate do you use: - <button onclick="toggleAnswer('q1')">Answer</button><span id="q1" style="visibility: hidden">nci:C25492</span>
+Modify the above query to select the MIE/KE text. Which predicate do you use? <button onclick="toggleAnswer('nsrdfq1')">Answer</button><span id="nsrdfq1" style="visibility: hidden">nci:C25492</span>
 
 ### Exercise 2 - counting of subjects
 
-Count the number of distinct ERM identifiers
+To get an overview of what is in the RDF you can create a number of queries to count thing. For example, how many distinct ERM identifiers are mentioned in the RDF? <button onclick="toggleAnswer('nsrdfq2a')">Answer</button><span id="nsrdfq2a" style="visibility: hidden">87</span>
+  And how many publications? <button onclick="toggleAnswer('nsrdfq2b')">Answer</button><span id="nsrdfq2b" style="visibility: hidden">21</span>
+  
+  How to count distict instances? Here is a hint: <button onclick="toggleAnswer('hint1')">HINT</button><span id="hint1" style="visibility: hidden">use COUNT(DISTINCT ?id as ?nid)</span>
 
-HINT: use COUNT(DISTINCT ?id as ?nid)
-
-```SPARQL
-PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-
-SELECT (COUNT(DISTINCT ?id as ?nid)) WHERE { 
-    ?s a obo:CHEBI_59999 ; 
-         dcterms:identifier ?id.
-} 
-```
   
 ### Exercise 3 - 
 
