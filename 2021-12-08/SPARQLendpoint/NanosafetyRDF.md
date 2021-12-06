@@ -23,8 +23,8 @@ Adverse Outcome Pathways (AOPs) have been proposed to explore interactions of ch
 
 <figure>
     <img src="NSRDF.png" alt="A kitten">
-    <figcaption>Graphical representation of the Resource Description Framework Schema for nanomaterials (NMs)<figcaption>
-<figure>  
+    <figcaption>Graphical representation of the Resource Description Framework Schema for nanomaterials (NMs)<\figcaption>
+<\figure>
 
 
 ## Exercises
@@ -47,31 +47,34 @@ Modify the above query to select the MIE/KE text. Which predicate do you use? <b
 ### Exercise 2 - counting of subjects
 
 To get an overview of what is in the RDF you can create a number of queries to count thing. For example, how many distinct ERM identifiers are mentioned in the RDF? <button onclick="toggleAnswer('nsrdfq2a')">Answer</button><span id="nsrdfq2a" style="visibility: hidden">87</span>
+  
   And how many publications? <button onclick="toggleAnswer('nsrdfq2b')">Answer</button><span id="nsrdfq2b" style="visibility: hidden">21</span>
+  
+  Can you count the number of endpoints? <button onclick="toggleAnswer('nsrdfq2c')">Answer</button><span id="nsrdfq2c" style="visibility: hidden">7</span>
   
   How to count distict instances? Here is a hint: <button onclick="toggleAnswer('hint1')">HINT</button><span id="hint1" style="visibility: hidden">use COUNT(DISTINCT ?id as ?nid)</span>
 
   
-### Exercise 3 - 
+### Exercise 3 - going one step further
 
-List of data kinds 
+As you can see in the RDF schema above you can extract information from the RDF about which endpoints the 
+  write a SPARQL query to list the endpoints mentioned in each paper (distinct DOI). Do all papers report all endpoints? <button onclick="toggleAnswer('nsrdfq3')">Answer</button><span id="nsrdfq3" style="visibility: hidden">No, quite a few only report 6 endpoints.</span>
   
-  aswer:
+### Exercise 4 - extracting values
   
-  ```SPARQL
-  select distinct ?measurement where {
-  ?s obo:BFO_0000056 ?mg .
-  ?mg obo:OBI_0000299 ?o .
-  ?o a bao:BAO_0000179 ;
-       rdfs:label ?measurement .
-}
-  ```
-  
-  what is the first material and value for the zeta potential if you ORDER BY the material name and doi
-  answer: 6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75   
+  The following query give 
+  but 3 lines are missing 
   
   ```SPARQL
-  select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  where {
+  PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX enm: <http://purl.enanomapper.net/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wd: <http://www.wikidata.org/prop/direct/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  where {
   ?s rdfs:label ?mlabel ; 
      obo:BFO_0000056 ?mg .
   ?s dcterms:source ?source .
@@ -80,17 +83,20 @@ List of data kinds
   ?o a bao:BAO_0000179 ;
        rdfs:label ?measurement ;
        rdfs:label "zeta potential"@en .
-  optional{?o obo:STATO_0000035 ?value_range .}
-  optional{?o sio:has-value ?value. }
-  optional{?o sio:has-unit ?unit .}
   optional{?o enm:has-condition ?g .}
   optional{?g rdfs:label ?medlabel
               ; sio:has-value ?medium .}
+  #optional{value_range}
+  #optional{value}
+  #optional{unit}
 
 } ORDER BY ?mlabel, ?doi
   ```
+  Write the lines for value_range, value and unit. HINT: the predicate for value_range is not shown in the figure and is obo:STATO_0000035
+ 
+  Run the query, what is the first material and value for the zeta potential if you ORDER BY the material name and DOI? <button onclick="toggleAnswer('nsrdfq4')">Answer</button><span id="nsrdfq4" style="visibility: hidden">6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75</span>
+
   
-  
-### Exercise 4 - 
+### Exercise 5 - 
 
   Get names of KEs based on ids through federated query to AOP wiki
