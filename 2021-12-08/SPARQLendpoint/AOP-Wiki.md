@@ -1,4 +1,4 @@
-# Querying AOP-Wiki
+# Querying the AOP-Wiki
 
 [prev](README.md)
 
@@ -56,7 +56,7 @@ WHERE {
 - <button onclick="toggleAnswer('q1.4')">Answer</button><span id="q1.4" style="visibility: hidden">Adding another variable to the `SELECT` list and requesting that variable by adding in the query `?KE mmo:0000000 ?[new variable name]`. This should return a table with the added column.</span>
 
 ### Exercise 2 - counting of subjects
-This first exercise is about creating simple SPARQL queries that count particular types of subjects in the RDF. See the example SPARQL query below that counts the number of Key Events in the RDF.
+This exercise is about creating simple SPARQL queries that count particular types of subjects in the RDF. See the example SPARQL query below that counts the number of Key Events in the RDF.
 
 ```sparql
 SELECT (count (?KE) as ?nKE) 
@@ -88,7 +88,27 @@ With this exercise, the RDF will be explored a little more extensively. By combi
 - Question 3.2: What is the title of the Adverse Outcome Pathway that is activated by stressor with ID 50?
 - <button onclick="toggleAnswer('q3.2')">Answer</button><span id="q3.2" style="visibility: hidden">AOP 3 that is called "Inhibition of the mitochondrial complex I of nigro-striatal neurons leads to parkinsonian motor deficits"</span>
 
-### Exercise 4 - Complete graph exploration
-From AO X, which MIE?
-How many AOPs have KEx as MIE
-What AOs can stressor Y lead to?
+- Question 3.3: What are the identifiers and titles of the Molecular Initiating Events that leads to the Adverse Outcome with ID 344 (Liver fibrosis)?
+- <button onclick="toggleAnswer('q3.3')">Answer</button><span id="q3.3" style="visibility: hidden">244 (Alkylation, Protein), 1539 (Endocytotic lysosomal uptake) and 1740 (ACE2 inhibition)</span>
+
+### Exercise 4 - Federated SPARQL query
+This final exercise adds an extra level of difficulty by linking the AOP-Wiki RDF with another database through SPARQL (this is called a Federated SPARQL query). In this exercise we will explore the connection between AOP-Wiki and WikiPathways. The SPARQL query will need to contain a `SERVICE` function and the final query will have the following structure:
+
+```sparql
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+SELECT [variables]
+WHERE {
+[query AOP-Wiki]
+SERVICE <https://sparql.wikipathways.org/sparql> {
+[query WikiPathways]
+}}
+```
+
+The SPARQL query will require the use of the mapped chemical IDs in AOP-Wiki using the `skos:exactMatch` predicate. To do this, try mapping the resources through the ChEBI IDs. In AOP-Wiki, these are defined as type `cheminf:000407` and in WikiPathways these are matched to datanodes with `wp:bdbChEBI` (hence the `PREFIX wp` is defined in the SPARQL query). To do this, you might want to do the [WikiPathways SPARQL endpoint tutorial](WikiPathways.md) first.
+
+- Question 4.1: What is the title of the pathway in WikiPathways that has the chemical described in the stressor of Adverse Outcome Pathway with ID 274 in AOP-Wiki?
+- <button onclick="toggleAnswer('q4.1')">Answer</button><span id="q4.1" style="visibility: hidden">For Valproic acid: Valproic acid pathway (WP3871) and for Butyrate: Butyrate-induced histone acetylation (WP2366) and SCFA and skeletal muscle substrate metabolism (WP4030)</span>
+
+## End
+
+Thank you for your participation. For any feedback or questions about this section, please contact Marvin Martens (marvin.martens@maastrichtuniversity.nl).
