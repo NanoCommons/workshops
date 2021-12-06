@@ -7,6 +7,7 @@ select distinct ?KE where {
 ```
 
 ### Exercise 2 - counting of subjects
+A - ERM ids
 
 ```SPARQL
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -17,22 +18,51 @@ SELECT (COUNT(DISTINCT ?id as ?nid)) WHERE {
          dcterms:identifier ?id.
 } 
 ```
+B - publications
+
+```SPARQL
+SELECT (COUNT(DISTINCT ?doi as ?ndoi)) WHERE { 
+    ?source a wd:Q13442814 ; 
+              owl:sameAs ?doi .
+} 
+```
+
+C - endpoints
+
+```SPARQL
+SELECT (COUNT(DISTINCT ?ep as ?nep)) WHERE { 
+    ?o a bao:BAO_0000179 ;
+       rdfs:label ?ep .
+} 
+```
   
-### Exercise 3 - 
+### Exercise 3 - going one step further
   
   ```SPARQL
-  select distinct ?measurement where {
-  ?s obo:BFO_0000056 ?mg .
+select distinct ?doi ?ep  where {
+  ?s obo:BFO_0000056 ?mg ;
+     dcterms:source ?source .
+  ?source owl:sameAs ?doi .
   ?mg obo:OBI_0000299 ?o .
   ?o a bao:BAO_0000179 ;
-       rdfs:label ?measurement .
-}
+       rdfs:label ?ep .
+
+} ORDER BY ?doi
   ```
   
 ### Exercise 4 - : 6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75   
   
   ```SPARQL
-  select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  where {
+PREFIX nsvoc: <https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX enm: <http://purl.enanomapper.net/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wd: <http://www.wikidata.org/prop/direct/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  where {
   ?s rdfs:label ?mlabel ; 
      obo:BFO_0000056 ?mg .
   ?s dcterms:source ?source .
