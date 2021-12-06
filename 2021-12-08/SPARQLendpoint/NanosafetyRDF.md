@@ -91,7 +91,7 @@ select distinct ?mlabel ?doi ?measurement ?medium where {
   ```
   Add the lines for value_range, value and unit, so that the query also provides you with the values of the zeta potential in the different media. HINT: the predicate for value_range is not shown in the figure and is obo:STATO_0000035.
  
-  Run the query, what is the first material and value for the zeta potential if you ORDER BY the material name and DOI? <button onclick="toggleAnswer('nsrdfq4')">Answer</button><span id="nsrdfq4" style="visibility: hidden">6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75</span>
+  Run the query, what is the first material and value for the zeta potential if you ORDER BY the material name and DOI? <button onclick="toggleAnswer('nsrdfq4')">Answer</button><span id="nsrdfq4" style="visibility: hidden">6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75 mV</span>
 
   
 ### Exercise 5 - Federated query
