@@ -59,3 +59,46 @@ SELECT (COUNT(DISTINCT ?id as ?nid)) WHERE {
          dcterms:identifier ?id.
 } 
 ```
+  
+### Exercise 3 - 
+
+List of data kinds 
+  
+  aswer:
+  
+  ```SPARQL
+  select distinct ?measurement where {
+  ?s obo:BFO_0000056 ?mg .
+  ?mg obo:OBI_0000299 ?o .
+  ?o a bao:BAO_0000179 ;
+       rdfs:label ?measurement .
+}
+  ```
+  
+  what is the first material and value for the zeta potential if you ORDER BY the material name and doi
+  answer: 6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75   
+  
+  ```SPARQL
+  select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  where {
+  ?s rdfs:label ?mlabel ; 
+     obo:BFO_0000056 ?mg .
+  ?s dcterms:source ?source .
+  ?source owl:sameAs ?doi .
+  ?mg obo:OBI_0000299 ?o .
+  ?o a bao:BAO_0000179 ;
+       rdfs:label ?measurement ;
+       rdfs:label "zeta potential"@en .
+  optional{?o obo:STATO_0000035 ?value_range .}
+  optional{?o sio:has-value ?value. }
+  optional{?o sio:has-unit ?unit .}
+  optional{?o enm:has-condition ?g .}
+  optional{?g rdfs:label ?medlabel
+              ; sio:has-value ?medium .}
+
+} ORDER BY ?mlabel, ?doi
+  ```
+  
+  
+### Exercise 4 - 
+
+  Get names of KEs based on ids through federated query to AOP wiki
