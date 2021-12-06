@@ -18,7 +18,7 @@
 ## Introduction
 
 ## Figure of RDF schema
-
+![Graphical representation of RDF schema](chembl_18_rdf_summary.png "ChEMBL RDF")
 ## Exercises
 
 ### Exercise 1 - Listing of subjects
