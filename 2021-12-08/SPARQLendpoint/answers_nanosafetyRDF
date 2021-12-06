@@ -55,3 +55,24 @@ SELECT (COUNT(DISTINCT ?id as ?nid)) WHERE {
 ### Exercise 5 - 
 
   Get names of KEs based on ids through federated query to AOP wiki
+  
+  ```SPARQL
+  PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX aopo: <http://aopkb.org/aop_ontology#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX ncbitaxon: <http://purl.bioontology.org/ontology/NCBITAXON/>
+
+select distinct ?mie ?mietitle ?aop ?ao ?aotitle where {
+    ?s a obo:CHEBI_59999;
+    dcterms:identifier ?ID ;
+    dcterms:title ?materialname ;
+    dcterms:type ?materialtype ;
+    sio:SIO_000636 ?mie.
+SERVICE <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql>{
+?mie dc:title ?mietitle.
+?aop aopo:has_molecular_initiating_event ?mie; aopo:has_adverse_outcome ?ao.
+?ao dc:title ?aotitle;ncbitaxon:131567 "WCS_9606".}
+ }
+ ```
