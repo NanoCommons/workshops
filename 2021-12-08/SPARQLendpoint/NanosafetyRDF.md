@@ -21,11 +21,9 @@ Adverse Outcome Pathways (AOPs) have been proposed to explore interactions of ch
 
 ## Figure of RDF schema
 
-<figure>
-    <img src="NSRDF.png" alt="A kitten">
-    <figcaption>Graphical representation of the Resource Description Framework Schema for nanomaterials (NMs)<\figcaption>
-<\figure>
+![Graphical representation of RDF schema](NSRDF.png "Image Title")
 
+Graphical representation of the Resource Description Framework Schema for nanomaterials (NMs)
 
 ## Exercises
 
