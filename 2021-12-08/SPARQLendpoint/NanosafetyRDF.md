@@ -94,9 +94,13 @@ select distinct ?mlabel ?doi ?measurement ?medium where {
   Run the query, what is the first material and value for the zeta potential if you ORDER BY the material name and DOI? <button onclick="toggleAnswer('nsrdfq4')">Answer</button><span id="nsrdfq4" style="visibility: hidden">6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75</span>
 
   
-### Exercise 5 - 
+### Exercise 5 - Federated query
 In exercise 1 we looked at the KE id's that are mentioned in the Nanosafety RDF. Using a federated query to AOP wiki we can get the labels for these key events. 
   
   What is the label for KE https://identifiers.org/aop.events/1194? <button onclick="toggleAnswer('nsrdfq5')">Answer</button><span id="nsrdfq5" style="visibility: hidden">Increase, DNA damage</span>
   
 Here is a hint: <button onclick="toggleAnswer('hint1')">HINT</button><span id="hint1" style="visibility: hidden">use SERVICE <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql>{?mie dc:title ?mietitle .}</span>
+  
+### Bonus question
+  For each KE, can you find out which AOP it belongs to and what the associated AO is, using AOP wiki?
+  
