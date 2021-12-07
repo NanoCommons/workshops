@@ -166,4 +166,4 @@ for journal X, list each paper and the number of chemicals in there
 For metabolites in WP X, which protein targets do the chemicals have?
 
 ### End
-Thank you for your participation. For any feedback or questions about this section, please contact Marvin Martens (marvin.martens@maastrichtuniversity.nl).
+Thank you for your participation. For any feedback or questions about this section, please contact Ammar Ammar (a.ammar@maastrichtuniversity.nl).
