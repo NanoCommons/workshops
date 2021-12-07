@@ -98,7 +98,7 @@ count chemicals in pubmed ID Y
 
 ### Exercise 3 - More detailed exploration
 
-**List all assays, target names and UniProt IDs for the drug Paracetaml (CHEBI:46195)**
+**List all assays, target names and UniProt IDs for the drug Paracetamol (CHEBI:46195)**
 
 ```{sparql}
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
