@@ -47,7 +47,7 @@ WHERE {
 
 **Listing targets**
 
-```{sparql}
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -69,7 +69,7 @@ WHERE {
 
 **Listing ChEMBL sources**
 
-```{sparql}
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -100,7 +100,7 @@ count chemicals in pubmed ID Y
 
 **List all assays, target names and UniProt IDs for the drug Paracetamol (CHEBI:46195)**
 
-```{sparql}
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -134,7 +134,7 @@ WHERE {
 
 **Get all assay, binding affinity type (Kd, Ki, IC50) and affinity value for all compounds targeting Thrombin protein (CHEMBL204)**
 
-```{sparql}
+```sparql
 PREFIX chembl: <http://rdf.ebi.ac.uk/terms/chembl#>
 PREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>
 PREFIX chembl_molecule: <http://rdf.ebi.ac.uk/resource/chembl/molecule/>
