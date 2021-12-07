@@ -7,7 +7,7 @@ The SPARQL endpoints that BiGCaT hosts are:
 - [WikiPathways](https://sparql.wikipathways.org/)
 - [AOP-Wiki RDF](https://aopwiki.rdf.bigcat-bioinformatics.org/)
 - [Nanosafety RDF](https://nanosafety.rdf.bigcat-bioinformatics.org/)
-- [ChEMBL RDF]
+- [ChEMBL RDF](https://chemblmirror.rdf.bigcat-bioinformatics.org/)
 - [SbD4Nano Landscape](https://sbd4nanolandscape.rdf.bigcat-bioinformatics.org/sparql)
 
 ## Descriptions of SPARQL endpoints
