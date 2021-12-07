@@ -8,7 +8,6 @@ The SPARQL endpoints that BiGCaT hosts are:
 - [AOP-Wiki RDF](https://aopwiki.rdf.bigcat-bioinformatics.org/)
 - [Nanosafety RDF](https://nanosafety.rdf.bigcat-bioinformatics.org/)
 - [ChEMBL RDF](https://chemblmirror.rdf.bigcat-bioinformatics.org/)
-- [SbD4Nano Landscape](https://sbd4nanolandscape.rdf.bigcat-bioinformatics.org/sparql)
 
 ## Descriptions of SPARQL endpoints
 ### [WikiPathways](./WikiPathways.md)
@@ -23,13 +22,11 @@ Adverse Outcome Pathways (AOPs) have been proposed to explore interactions of ch
 ### [ChEMBL RDF](./ChEMBL.md)
 ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs. Built upon the ChEMBL database, an RDF representation of the ChEMBL database is produced by the European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI) and provided for [download](https://www.ebi.ac.uk/rdf/services/sparql). The ChEMBL RDF model uses a basic internal ontology, called the ChEMBL Core Ontology (CCO), to identify all of the primary entities (e.g., Documents, Assays, Substances, Targets) in the ChEMBL database. The department of Bioinformatics (BiGCaT) at Maastricht University took the initiative to host the RDF and expose it to the scientific community through a SPARQL endpoint where queries can be executed against the RDF to find answers to biological questions.
 
-### [SbD4Nano Landscape]
-bla
 
 ## Exercises per SPARQL endpoint
 - [WikiPathways](./WikiPathways.md)
 - [AOP-Wiki RDF](./AOP-Wiki.md)
 - [Nanosafety RDF](./NanosafetyRDF.md)
 - [ChEMBL RDF](./ChEMBL.md)
-- [SbD4Nano Landscape]
+
 
