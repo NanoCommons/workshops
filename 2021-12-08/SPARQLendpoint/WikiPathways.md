@@ -21,6 +21,8 @@ WikiPathways (https://www.wikipathways.org) is a biological pathway database kno
 The WikiPathways SPARQL endpoint is accessible on [https://sparql.wikipathways.org](https://sparql.wikipathways.org/)
 
 ## Figure of RDF schema
+<img src="WP RDF simple schema.png">
+
 
 ## Exercises
 ### Exercise 1 - Listing of subjects
