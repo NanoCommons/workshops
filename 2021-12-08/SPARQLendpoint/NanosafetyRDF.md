@@ -19,6 +19,8 @@
 
 Adverse Outcome Pathways (AOPs) have been proposed to explore interactions of chemicals/materials with biological systems. Each AOP starts with a molecular initiating event (MIE) and possibly ends with adverse outcome(s). So far, we do not fully understand how many nanomaterials interact with proteins, biomembranes, cells, and biological structures in general. There is limited insight into the toxicology-related key events (KEs) they trigger, such as oxidative stress and inflammation, or the biological processes underlying these KEs. For this SPARQL endpoint we integrate the annotation of nanomaterials and their MIEs with ontology annotation to demonstrate how we can then query AOPs and biological pathway information for these materials. 
 
+The SPARQL endpoint is available here: https://nanosafety.rdf.bigcat-bioinformatics.org/
+
 ## Figure of RDF schema
 
 ![Graphical representation of RDF schema](NSRDF.png "Image Title")
