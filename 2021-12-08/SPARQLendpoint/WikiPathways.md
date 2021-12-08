@@ -20,7 +20,7 @@ WikiPathways (https://www.wikipathways.org) is a biological pathway database kno
 
 The WikiPathways SPARQL endpoint is accessible on [https://sparql.wikipathways.org](https://sparql.wikipathways.org/)
 
-## Figure of RDF schema
+## Figure of simplified RDF schema
 <img src="WP RDF simple schema.png">
 
 
@@ -91,6 +91,17 @@ Challenge: construct a query that provides the count of DataNodes for each indiv
 - <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">https://bit.ly/3lMqR3d</span>
 
 ### Exercise 4 - Federated SPARQL query
+This final exercise adds an extra level of difficulty by linking the AOP-Wiki RDF with another database through SPARQL (this is called a Federated SPARQL query). In this exercise we will explore the connection between WikiPathways and AOP-Wiki. The SPARQL query will need to contain a `SERVICE` function and the final query will have the following structure: To do this exercise, you might want to do the [AOP-Wiki SPARQL endpoint tutorial](AOP-Wiki.md) first.
+
+```sparql
+PREFIX aopo: <http://vocabularies.wikipathways.org/wp#>
+SELECT [variables]
+WHERE {
+[query WikiPathways]
+SERVICE <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql> {
+[query AOP-Wiki]
+}}
+```
 
 ### End
 Thank you for your participation. For any feedback or questions about this section, please contact Marvin Martens (marvin.martens@maastrichtuniversity.nl).
