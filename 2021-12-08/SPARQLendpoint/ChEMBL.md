@@ -154,8 +154,7 @@ The above query get assays and molecules information along with binding affinity
 - Question 3.1: How to limit the binding affinity type of the returned values to "IC50"?
 - <button onclick="toggleAnswer('q3.1')">Answer</button> <span id="q3.1" style="visibility: hidden"> In the line "VALUES ?bindingAffinityType {"Kd" "Ki" "IC50"}", remove "Ki" and "Kd" so only "IC50" is left between the curly brackets.</span>
 
-### Extra query to look at
-
+### Exercise 4: assay, target and protein information
 
 **List all assays, target names and UniProt IDs for the drug Paracetamol (CHEBI:46195)**
 
@@ -190,6 +189,17 @@ WHERE {
   ?uniprot a cco:UniprotRef
 }
 ```
+
+The above query will get assay types, target and UniProt identifier for all the proteins tested fo binding with a single molecule (chembl_molecule:CHEMBL46195).
+
+Modify the above query with a molecule of interest to you or one of the following molecules to see which proteins and what type of assays have been used with it.
+
+CHEMBL2094079
+CHEMBL334894
+CHEMBL62704
+CHEMBL553740
+CHEMBL108214
+CHEMBL33384
 
 ### End
 Thank you for your participation. For any feedback or questions about this section, please contact Ammar Ammar (a.ammar@maastrichtuniversity.nl).
