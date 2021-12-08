@@ -77,8 +77,8 @@ SELECT ?Source
 
 Take a look at the query above and answer the following question:
 
-- Question 2.1: The previuos query gets all the sources in ChEMBL in a form of URLs, what do we need to add to the query to get the description of the source (using predicate: dcterms:description)?
-- <button onclick="toggleAnswer('q2.1')">Answer</button> <span id="q2.1" style="visibility: hidden"> ?Source dcterms:description ?Description. </span>
+- Question 1.2: The previuos query gets all the sources in ChEMBL in a form of URLs, what do we need to add to the query to get the description of the source (using predicate: dcterms:description)?
+- <button onclick="toggleAnswer('q1.2')">Answer</button> <span id="q1.2" style="visibility: hidden"> ?Source dcterms:description ?Description. </span>
 
 ### Exercise 2 - Counting of subjects
 
@@ -111,12 +111,12 @@ WHERE {
 
 The query above gets the count of the assays used to measure the activity of the molecule with ID (CHEMBL294873). Knowing that, answer the following question:
 
-- Question 3.1: How many assays you will get after running the query above?
-- <button onclick="toggleAnswer('q3.1')">Answer</button> <span id="q3.1" style="visibility: hidden"> 6 </span>
-- Question 3.2: What do you need to change in the previous query to get the count of the assays used to measure activity of molecule (CHEMBL46195) ?
-- <button onclick="toggleAnswer('q3.2')">Answer</button> <span id="q3.2" style="visibility: hidden"> Change the molecule ID in the line "cco:hasMolecule chembl_molecule:CHEMBL294873 ;" from CHEMBL294873 to CHEMBL46195 </span>
-- Question 3.3: Try the query after making the change, how many assays you get now?
-- <button onclick="toggleAnswer('q3.3')">Answer</button> <span id="q3.3" style="visibility: hidden"> 2 </span>
+- Question 2.1: How many assays you will get after running the query above?
+- <button onclick="toggleAnswer('q2.1')">Answer</button> <span id="q2.1" style="visibility: hidden"> 6 </span>
+- Question 2.2: What do you need to change in the previous query to get the count of the assays used to measure activity of molecule (CHEMBL46195) ?
+- <button onclick="toggleAnswer('q2.2')">Answer</button> <span id="q2.2" style="visibility: hidden"> Change the molecule ID in the line "cco:hasMolecule chembl_molecule:CHEMBL294873 ;" from CHEMBL294873 to CHEMBL46195 </span>
+- Question 2.3: Try the query after making the change, how many assays you get now?
+- <button onclick="toggleAnswer('q2.3')">Answer</button> <span id="q2.3" style="visibility: hidden"> 2 </span>
 
 
 ### Exercise 3 - More detailed exploration
