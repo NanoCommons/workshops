@@ -108,7 +108,7 @@ SERVICE <https://sparql.wikipathways.org/sparql> {
 The SPARQL query will require the use of the mapped chemical IDs in AOP-Wiki using the `skos:exactMatch` predicate. To do this, try mapping the resources through the ChEBI IDs. In AOP-Wiki, these are defined as type `cheminf:000407` and in WikiPathways these are matched to datanodes with `wp:bdbChEBI` (hence the `PREFIX wp` is defined in the SPARQL query). To do this, you might want to do the [WikiPathways SPARQL endpoint tutorial](WikiPathways.md) first.
 
 - Question 4.1: What are the titles of the two human pathways in WikiPathways that have the chemical described in the stressor of Adverse Outcome Pathway with ID 274 in AOP-Wiki?
-- <button onclick="toggleAnswer('q4.1')">Answer</button><span id="q4.1" style="visibility: hidden">For Valproic acid: Valproic acid pathway (WP3871) and for Butyrate: Butyrate-induced histone acetylation (WP2366) and SCFA and skeletal muscle substrate metabolism (WP4030) Link to SPARQL query: https://bit.ly/3dy9bUI and the shortened version: https://bit.ly/3DBZY8r</span>
+- <button onclick="toggleAnswer('q4.1')">Answer</button><span id="q4.1" style="visibility: hidden">For Valproic acid: Valproic acid pathway (WP3871) and for Butyrate: Butyrate-induced histone acetylation (WP2366) and SCFA and skeletal muscle substrate metabolism (WP4030) Link to SPARQL query: [https://bit.ly/3dy9bUI](https://bit.ly/3dy9bUI) and the shortened version: [https://bit.ly/3DBZY8r](https://bit.ly/3DBZY8r)</span>
 
 ## End
 
