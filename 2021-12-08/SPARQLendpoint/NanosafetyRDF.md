@@ -57,8 +57,7 @@ To get an overview of what is in the RDF you can create a number of queries to c
   
 ### Exercise 3 - going one step further
 
-As you can see in the RDF schema above you can extract information from the RDF about which endpoints the 
-  write a SPARQL query to list the endpoints mentioned in each paper (distinct DOI). Do all papers report all endpoints? <button onclick="toggleAnswer('nsrdfq3')">Answer</button><span id="nsrdfq3" style="visibility: hidden">No, quite a few only report 6 endpoints.</span>
+As you can see in the RDF schema above you can extract information from the RDF about which endpoints a paper reports. Write a SPARQL query to list the endpoints mentioned in each paper (distinct DOI). Do all papers report all endpoints? <button onclick="toggleAnswer('nsrdfq3')">Answer</button><span id="nsrdfq3" style="visibility: hidden">No, quite a few only report 6 endpoints.</span>
   
 ### Exercise 4 - extracting values
   
