@@ -66,7 +66,7 @@ As you can see in the RDF schema above you can extract information from the RDF 
   The following query show you information about the medium in which the zeta potential is measured. 
   
   ```SPARQL
-  PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX enm: <http://purl.enanomapper.net/>
@@ -74,7 +74,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX wd: <http://www.wikidata.org/prop/direct/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-select distinct ?mlabel ?doi ?measurement ?medium where {
+SELECT DISTINCT ?mlabel ?doi ?measurement ?medium WHERE {
   ?s rdfs:label ?mlabel ; 
      obo:BFO_0000056 ?mg .
   ?s dcterms:source ?source .
@@ -83,12 +83,12 @@ select distinct ?mlabel ?doi ?measurement ?medium where {
   ?o a bao:BAO_0000179 ;
        rdfs:label ?measurement ;
        rdfs:label "zeta potential"@en .
-  optional{?o enm:has-condition ?g .}
-  optional{?g rdfs:label ?medlabel
+  OPTIONAL{?o enm:has-condition ?g .}
+  OPTIONAL{?g rdfs:label ?medlabel
               ; sio:has-value ?medium .}
-  #optional{value_range}
-  #optional{value}
-  #optional{unit}
+  #OPTIONAL{value_range}
+  #OPTIONAL{value}
+  #OPTIONAL{unit}
 
 } ORDER BY ?mlabel, ?doi
   ```
