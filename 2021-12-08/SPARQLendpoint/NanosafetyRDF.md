@@ -100,7 +100,7 @@ In exercise 1 we looked at the KE id's that are mentioned in the Nanosafety RDF.
   
   What is the label for KE https://identifiers.org/aop.events/1194? <button onclick="toggleAnswer('nsrdfq5')">Answer</button><span id="nsrdfq5" style="visibility: hidden">Increase, DNA damage</span>
   
-Here is a hint: <button onclick="toggleAnswer('hint1')">HINT</button><span id="hint1" style="visibility: hidden">use SERVICE -URL-{?mie dc:title ?mietitle .}</span>
+Here is a hint: <button onclick="toggleAnswer('hint2')">HINT</button><span id="hint2" style="visibility: hidden">use SERVICE -URL-{?mie dc:title ?mietitle .}</span>
   
 ### Bonus question
   For each KE, can you find out which AOP it belongs to and what the associated AO is, using AOP wiki?
