@@ -111,5 +111,4 @@ The SPARQL query will require the use of the mapped chemical IDs in AOP-Wiki usi
 - <button onclick="toggleAnswer('q4.1')">Answer</button><span id="q4.1" style="visibility: hidden">For Valproic acid: Valproic acid pathway (WP3871) and for Butyrate: Butyrate-induced histone acetylation (WP2366) and SCFA and skeletal muscle substrate metabolism (WP4030) Link to SPARQL query: [https://bit.ly/3dy9bUI](https://bit.ly/3dy9bUI) and the shortened version: [https://bit.ly/3DBZY8r](https://bit.ly/3DBZY8r)</span>
 
 ## End
-
 Thank you for your participation. For any feedback or questions about this section, please contact Marvin Martens (marvin.martens@maastrichtuniversity.nl).
