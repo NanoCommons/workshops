@@ -98,8 +98,7 @@ SELECT ?Source ?Description
    ?Source ?p cco:Source .
    ?Source dcterms:description ?Description
 } LIMIT 100
-``` 
-</span>
+``` </span>
 
 ### Exercise 2 - Counting of subjects
 
