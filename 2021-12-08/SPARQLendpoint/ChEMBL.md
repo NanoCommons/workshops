@@ -24,6 +24,8 @@ ChEMBL is a manually curated database of bioactive molecules with drug-like prop
 
 ### Exercise 1 - Listing of subjects
 
+The simplest SPARQL queries to explore RDF is to retrieve full lists of subjects of a particular type, which is frequently defined with the predicate rdfs:type or "a" which can be used interchangably. The type itself can be part of a hierarchy and then we can specify the type of a particular subclass using the predicate rdfs:subClassOf. See the below example of listing all molecules in the ChEMBL RDF where the molecule type is a subclass of the cco:Substance class.
+
 **Listing chemicals**
 
 ```sparql
@@ -46,7 +48,13 @@ WHERE {
 } limit 20
 ```
 
-**Listing targets**
+By looking at the RDF schema figure, you should be able to adapt the SPARQL query to answer the following question:
+
+- Question 1.1: In order to get all targets in ChEMBL instead of substacnes, we need to replace the class `cco:Substance` with another one, which one is that? 
+- <button onclick="toggleAnswer('q1.1')">Answer</button> <span id="q1.1" style="visibility: hidden">cco:Target</span>
+
+
+**Listing ChEMBL sources**
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -61,15 +69,17 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 PREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>
-SELECT ?target 
-WHERE { 
-  ?target a ?type . 
-  ?type rdfs:subClassOf* cco:Target .
-} LIMIT 20
+SELECT ?Source
+   WHERE {
+   ?Source ?p cco:Source .
+} LIMIT 100
 ```
 
-**Listing ChEMBL sources**
 
+Take a look at the query above and answer the following question:
+
+- Question 2.1: The previuos query gets all the sources in ChEMBL in a form of URLs, what do we need to add to the query to get the description of the source (using predicate: dcterms:description)?
+- <button onclick="toggleAnswer('q2.1')">Answer</button> <span id="q2.1" style="visibility: hidden"> 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -88,7 +98,7 @@ SELECT ?Source ?Description
    ?Source ?p cco:Source .
    ?Source dcterms:description ?Description
 } LIMIT 100
-```
+``` </span>
 
 ### Exercise 2 - Counting of subjects
 
