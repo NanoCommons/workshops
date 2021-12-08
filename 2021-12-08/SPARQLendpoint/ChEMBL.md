@@ -75,30 +75,10 @@ SELECT ?Source
 } LIMIT 100
 ```
 
-
 Take a look at the query above and answer the following question:
 
 - Question 2.1: The previuos query gets all the sources in ChEMBL in a form of URLs, what do we need to add to the query to get the description of the source (using predicate: dcterms:description)?
-- <button onclick="toggleAnswer('q2.1')">Answer</button> <span id="q2.1" style="visibility: hidden"> 
-```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX dbpedia2: <http://dbpedia.org/property/>
-PREFIX dbpedia: <http://dbpedia.org/>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-PREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>
-SELECT ?Source ?Description
-   WHERE {
-   ?Source ?p cco:Source .
-   ?Source dcterms:description ?Description
-} LIMIT 100
-``` </span>
+- <button onclick="toggleAnswer('q2.1')">Answer</button> <span id="q2.1" style="visibility: hidden"> ?Source dcterms:description ?Description. </span>
 
 ### Exercise 2 - Counting of subjects
 
@@ -128,6 +108,15 @@ WHERE {
   ?assay cco:hasSource ?source .
 }
 ```
+
+The query above gets the count of the assays used to measure the activity of the molecule with ID (CHEMBL294873). Knowing that, answer the following question:
+
+- Question 3.1: How many assays you will get after running the query above?
+- <button onclick="toggleAnswer('q3.1')">Answer</button> <span id="q3.1" style="visibility: hidden"> 6 </span>
+- Question 3.2: What do you need to change in the previous query to get the count of the assays used to measure activity of molecule (CHEMBL46195) ?
+- <button onclick="toggleAnswer('q3.2')">Answer</button> <span id="q3.2" style="visibility: hidden"> Change the molecule ID in the line "cco:hasMolecule chembl_molecule:CHEMBL294873 ;" from CHEMBL294873 to CHEMBL46195 </span>
+- Question 3.3: Try the query after making the change, how many assays you get now?
+- <button onclick="toggleAnswer('q3.3')">Answer</button> <span id="q3.3" style="visibility: hidden"> 2 </span>
 
 
 ### Exercise 3 - More detailed exploration
