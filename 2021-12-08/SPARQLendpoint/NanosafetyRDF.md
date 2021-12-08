@@ -106,3 +106,5 @@ Here is a hint: <button onclick="toggleAnswer('hint2')">HINT</button><span id="h
 ### Bonus question
   For each KE, can you find out which AOP it belongs to and what the associated AO is, using AOP wiki?
   
+### Answers
+Example queries to get to the answers can be found [here](https://github.com/NanoCommons/workshops/blob/master/2021-12-08/SPARQLendpoint/answers_nanosafetyRDF.md)
