@@ -20,7 +20,7 @@ The AOP-Wiki SPARQL endpoint is loaded with RDF of the Adverse Outcome Pathway (
 The AOP-Wiki SPARQL endpoint is accessible on [https://aopwiki.rdf.bigcat-bioinformatics.org](https://aopwiki.rdf.bigcat-bioinformatics.org/)
 
 ## Figure of RDF schema
-![AOP-Wiki RDF simple](AOP-Wiki RDF simple.png "AOP-Wiki RDF")
+![AOP-Wiki RDF simple](AOP-Wiki RDF simple (1).png "AOP-Wiki RDF")
 
 ## Exercises
 ### Exercise 1 - Listing of subjects
