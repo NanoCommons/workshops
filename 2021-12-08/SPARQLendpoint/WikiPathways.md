@@ -102,7 +102,7 @@ SERVICE <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql> {
 }}
 ```
 - Question 4: What are the titles of Adverse Outcome Pathways in AOP-Wiki that are activated by metabolites with ChEBI IDs which are present in the pathway with identifier `WP5083` in WikiPathways? 
-- <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">Link to SPARQL query: [https://bit.ly/3DBRMVN](https://bit.ly/3DBRMVN)</span>
+- <button onclick="toggleAnswer('4')">Answer</button><span id="4" style="visibility: hidden">Link to SPARQL query: [https://bit.ly/3DBRMVN](https://bit.ly/3DBRMVN)</span>
 
 ### End
 Thank you for your participation. For any feedback or questions about this section, please contact Marvin Martens (marvin.martens@maastrichtuniversity.nl).
