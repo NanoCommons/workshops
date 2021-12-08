@@ -66,12 +66,27 @@ When copying this SPARQL query and executing it, you will find that the WikiPath
 
 
 ### Exercise 3 - More detailed exploration
-count pathways in community
-Listing human pathways
-list pathways that have gene with Ensembl ID X
-give matching ChEBI ID from metabolites with HMDB ID
-list uniprot IDs for all nodes in pathway X
-count pathways for each human pathway
+With this exercise, the RDF will be explored a little more extensively. By combining statements in the RDF query, we can link multiple subjects and filter for content that we want to get back from the service. Important: when filtering for a literal (gene label, organism, etc.) the literal should have the following format:  "text"xsd:string. For example, the next query returns the title for pathway with ID WP1560:
+
+```sparql
+SELECT ?pathwaytitle WHERE{
+    ?pathway a wp:Pathway .
+    ?pathway dc:title ?pathwaytitle .
+    ?pathway dcterms:identifier "WP4868"^^xsd:string .
+}
+```
+
+- Question 3.1: What is the title of pathway with identifier WP5087? 
+- <button onclick="toggleAnswer('q3.1')">Answer</button><span id="q3.1" style="visibility: hidden">Malignant pleural mesothelioma</span>
+- Question 3.2: How many human (Homo sapiens) pathways are present in the WikiPathways RDF? 
+- <button onclick="toggleAnswer('q3.2')">Answer</button><span id="q3.2" style="visibility: hidden">1224</span>
+- Question 3.3: Can you return the count of GeneProducts in pathway with ID WP78? 
+- <button onclick="toggleAnswer('q3.3')">Answer</button><span id="q3.3" style="visibility: hidden">18</span>
+- Question 3.4: Which pathways have a gene with the label "BAP1"? 
+- <button onclick="toggleAnswer('q3.4')">Answer</button><span id="q3.4" style="visibility: hidden">WP4018 and WP5087</span>
+
+Challenge: construct a query that provides the count of DataNodes for each individual human pathway
+- <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">https://bit.ly/3lMqR3d</span>
 
 ### Exercise 4 - Federated SPARQL query
 
