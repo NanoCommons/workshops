@@ -38,7 +38,7 @@ By looking at the RDF schema figure, you should be able to adapt the SPARQL quer
 
 - Question 1.1: What would we need to replace `aopo:KeyEvent` with to extract all Adverse Outcome Pathways? 
 - <button onclick="toggleAnswer('q1.1')">Answer</button><span id="q1.1" style="visibility: hidden">aopo:AdverseOutcomePathway</span>
-- Question 1.2: What would we need to replace `aopo:KeyEvent` with to extract all Stressors? 
+- Question 1.2: What would we need to replace `aopo:KeyEvent` with to extract all Chemicals? 
 - <button onclick="toggleAnswer('q1.2')">Answer</button><span id="q1.2" style="visibility: hidden">cheminf:0000000</span>
 
 Since the Key Event links can bring you to the AOP-Wiki for further exploration of the corresponding webpage, we can also directly request all their contents through the SPARQL query. For example, to extract the Key Event title, we add `?KE dc:title ?KEtitle` to the SPARQL query. The returned table upon running the query will get wider, so you might need to scroll to the right. 
