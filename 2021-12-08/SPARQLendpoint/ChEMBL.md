@@ -92,7 +92,7 @@ SELECT ?Source ?Description
 
 ### Exercise 2 - Counting of subjects
 
-**count assays that are used to get activity for the drug Paracetamol**
+**count assays that are used to get activity for the molecule CHEMBL294873**
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
