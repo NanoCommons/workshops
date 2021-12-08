@@ -60,7 +60,9 @@ As you can see in the RDF schema above you can extract information from the RDF 
   
 ### Exercise 4 - extracting values
   
-  The following query show you information about thw medium in which the zeta potential is measure. 
+  Can you write a query that gives you the material label, the DOI and the value for the endpoint "shape"@en? What is the shape of "CeO2 NP-A"? <button onclick="toggleAnswer('nsrdfq4a')">Answer</button><span id="nsrdfq4a" style="visibility: hidden">spherical</span>
+  
+  The following query show you information about the medium in which the zeta potential is measured. 
   
   ```SPARQL
   PREFIX bao: <http://www.bioassayontology.org/bao#>
@@ -91,15 +93,14 @@ select distinct ?mlabel ?doi ?measurement ?medium where {
   ```
   Add the lines for value_range, value and unit, so that the query also provides you with the values of the zeta potential in the different media. HINT: the predicate for value_range is not shown in the figure and is obo:STATO_0000035.
  
-  Run the query, what is the first material and value for the zeta potential if you ORDER BY the material name and DOI? <button onclick="toggleAnswer('nsrdfq4')">Answer</button><span id="nsrdfq4" style="visibility: hidden">6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75 mV</span>
-
+  Run the query, what is the first material and value for the zeta potential if you ORDER BY the material name and DOI? <button onclick="toggleAnswer('nsrdfq4b')">Answer</button><span id="nsrdfq4b" style="visibility: hidden">6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75 mV</span>
   
 ### Exercise 5 - Federated query
 In exercise 1 we looked at the KE id's that are mentioned in the Nanosafety RDF. Using a federated query to AOP wiki we can get the labels for these key events. 
   
   What is the label for KE https://identifiers.org/aop.events/1194? <button onclick="toggleAnswer('nsrdfq5')">Answer</button><span id="nsrdfq5" style="visibility: hidden">Increase, DNA damage</span>
   
-Here is a hint: <button onclick="toggleAnswer('hint1')">HINT</button><span id="hint1" style="visibility: hidden">use SERVICE <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql>{?mie dc:title ?mietitle .}</span>
+Here is a hint: <button onclick="toggleAnswer('hint1')">HINT</button><span id="hint1" style="visibility: hidden">use SERVICE -URL-{?mie dc:title ?mietitle .}</span>
   
 ### Bonus question
   For each KE, can you find out which AOP it belongs to and what the associated AO is, using AOP wiki?
