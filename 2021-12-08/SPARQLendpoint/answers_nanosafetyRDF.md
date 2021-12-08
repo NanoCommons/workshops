@@ -50,8 +50,34 @@ select distinct ?doi ?ep  where {
 } ORDER BY ?doi
   ```
   
-### Exercise 4 - : 6 TiO2 NP A (anatase/rutile) with a value of -8.92 +/- 0.75   
-  
+### Exercise 4 - extracting values
+
+A
+```SPARQL
+PREFIX nsvoc: <https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX enm: <http://purl.enanomapper.net/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wd: <http://www.wikidata.org/prop/direct/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+select distinct ?mlabel ?doi ?measurement ?value where {
+  ?s rdfs:label ?mlabel ; 
+     obo:BFO_0000056 ?mg .
+  ?s dcterms:source ?source .
+  ?source owl:sameAs ?doi .
+  ?mg obo:OBI_0000299 ?o .
+  ?o a bao:BAO_0000179 ;
+       rdfs:label ?measurement ;
+       rdfs:label "shape"@en .
+  optional{?o sio:has-value ?value. }
+
+} 
+```
+
+B 
   ```SPARQL
 PREFIX nsvoc: <https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:>
 PREFIX bao: <http://www.bioassayontology.org/bao#>
@@ -82,7 +108,7 @@ select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  whe
   ```
   
   
-### Exercise 5 - 
+### Exercise 5 - Federated query & BONUS question 
 
   Get names of KEs based on ids through federated query to AOP wiki
   
