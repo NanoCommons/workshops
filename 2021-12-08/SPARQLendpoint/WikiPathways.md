@@ -88,7 +88,7 @@ SELECT ?pathwaytitle WHERE{
 - <button onclick="toggleAnswer('q3.4')">Answer</button><span id="q3.4" style="visibility: hidden">WP4018 and WP5087</span>
 
 Challenge: construct a query that provides the count of DataNodes for each individual human pathway
-- <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">https://bit.ly/3lMqR3d</span>
+- <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">Link to SPARQL query: [https://bit.ly/3lMqR3d](https://bit.ly/3lMqR3d)</span>
 
 ### Exercise 4 - Federated SPARQL query
 This final exercise adds an extra level of difficulty by linking the AOP-Wiki RDF with another database through SPARQL (this is called a Federated SPARQL query). In this exercise we will explore the connection between WikiPathways and AOP-Wiki. The SPARQL query will need to contain a `SERVICE` function and the final query will have the following structure: To do this exercise, you might want to do the [AOP-Wiki SPARQL endpoint tutorial](AOP-Wiki.md) first.
@@ -103,7 +103,7 @@ SERVICE <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql> {
 }}
 ```
 - Question 4: What are the titles of Adverse Outcome Pathways in AOP-Wiki that are activated by metabolites with ChEBI IDs which are present in the pathway with identifier `WP5083` in WikiPathways? 
-- <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">https://bit.ly/3DBRMVN</span>
+- <button onclick="toggleAnswer('c')">Answer</button><span id="c" style="visibility: hidden">Link to SPARQL query: [https://bit.ly/3DBRMVN](https://bit.ly/3DBRMVN)</span>
 
 ### End
 Thank you for your participation. For any feedback or questions about this section, please contact Marvin Martens (marvin.martens@maastrichtuniversity.nl).
