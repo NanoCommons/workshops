@@ -121,6 +121,42 @@ The query above gets the count of the assays used to measure the activity of the
 
 ### Exercise 3 - More detailed exploration
 
+
+**Get all assay, binding affinity type (Kd, Ki, IC50) and affinity value for all compounds targeting Thrombin protein (CHEMBL204)**
+
+```sparql
+PREFIX chembl: <http://rdf.ebi.ac.uk/terms/chembl#>
+PREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>
+PREFIX chembl_molecule: <http://rdf.ebi.ac.uk/resource/chembl/molecule/>
+PREFIX chembl_target: <http://rdf.ebi.ac.uk/resource/chembl/target/>
+
+SELECT distinct ?assayLabel ?assayType ?molLabel ?bindingAffinityType ?value WHERE {
+
+  ?assay  chembl:hasTarget chembl_target:CHEMBL204.
+  
+  ?activity chembl:hasAssay  ?assay.
+  ?assay cco:assayType ?assayType.
+  ?activity chembl:hasMolecule ?molecule .
+
+  chembl_target:CHEMBL204 rdfs:label ?targetLabel.
+  ?molecule rdfs:label ?molLabel.
+  ?assay  rdfs:label ?assayLabel.
+  
+  VALUES ?bindingAffinityType {"Kd" "Ki" "IC50"}
+  ?activity chembl:type ?bindingAffinityType.
+  ?activity chembl:standardValue ?value.
+
+} limit 100
+```
+
+The above query get assays and molecules information along with binding affinity type and value limited ti the top 100 entry.  Knowing that, answer the following question:
+
+- Question 3.1: How to limit the binding affinity type of the returned values to "IC50"?
+- <button onclick="toggleAnswer('q3.1')">Answer</button> <span id="q3.1" style="visibility: hidden"> In the line "VALUES ?bindingAffinityType {"Kd" "Ki" "IC50"}", remove "Ki" and "Kd" so only "IC50" is left between the curly brackets.</span>
+
+### Extra query to look at
+
+
 **List all assays, target names and UniProt IDs for the drug Paracetamol (CHEBI:46195)**
 
 ```sparql
@@ -154,39 +190,6 @@ WHERE {
   ?uniprot a cco:UniprotRef
 }
 ```
-
-**Get all assay, binding affinity type (Kd, Ki, IC50) and affinity value for all compounds targeting Thrombin protein (CHEMBL204)**
-
-```sparql
-PREFIX chembl: <http://rdf.ebi.ac.uk/terms/chembl#>
-PREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>
-PREFIX chembl_molecule: <http://rdf.ebi.ac.uk/resource/chembl/molecule/>
-PREFIX chembl_target: <http://rdf.ebi.ac.uk/resource/chembl/target/>
-
-SELECT distinct ?assayLabel ?assayType ?molLabel ?bindingAffinityType ?value WHERE {
-
-  ?assay  chembl:hasTarget chembl_target:CHEMBL204.
-  
-  ?activity chembl:hasAssay  ?assay.
-  ?assay cco:assayType ?assayType.
-  ?activity chembl:hasMolecule ?molecule .
-
-  chembl_target:CHEMBL204 rdfs:label ?targetLabel.
-  ?molecule rdfs:label ?molLabel.
-  ?assay  rdfs:label ?assayLabel.
-  
-  ?activity chembl:type ?bindingAffinityType.
-  ?activity chembl:standardValue ?value.
-
-} limit 100
-```
-
-list chemicals that target protein X
-list assays that measure activity of chemical Y
-for journal X, list each paper and the number of chemicals in there
-
-### Exercise 4 - Federated SPARQL query
-For metabolites in WP X, which protein targets do the chemicals have?
 
 ### End
 Thank you for your participation. For any feedback or questions about this section, please contact Ammar Ammar (a.ammar@maastrichtuniversity.nl).
