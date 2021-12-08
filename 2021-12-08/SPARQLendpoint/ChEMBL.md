@@ -194,12 +194,12 @@ The above query will get assay types, target and UniProt identifier for all the 
 
 Modify the above query with a molecule of interest to you or one of the following molecules to see which proteins and what type of assays have been used with it.
 
-CHEMBL2094079
-CHEMBL334894
-CHEMBL62704
-CHEMBL553740
-CHEMBL108214
-CHEMBL33384
+- CHEMBL2094079
+- CHEMBL334894
+- CHEMBL62704
+- CHEMBL553740
+- CHEMBL108214
+- CHEMBL33384
 
 ### End
 Thank you for your participation. For any feedback or questions about this section, please contact Ammar Ammar (a.ammar@maastrichtuniversity.nl).
