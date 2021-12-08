@@ -52,7 +52,7 @@ select distinct ?doi ?ep  where {
   
 ### Exercise 4 - extracting values
 
-A
+A - shape
 ```SPARQL
 PREFIX nsvoc: <https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:>
 PREFIX bao: <http://www.bioassayontology.org/bao#>
@@ -77,7 +77,7 @@ select distinct ?mlabel ?doi ?measurement ?value where {
 } 
 ```
 
-B 
+B - zeta potential 
   ```SPARQL
 PREFIX nsvoc: <https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:>
 PREFIX bao: <http://www.bioassayontology.org/bao#>
@@ -110,7 +110,7 @@ select distinct ?mlabel ?doi ?measurement ?medium ?value_range ?value ?unit  whe
   
 ### Exercise 5 - Federated query & BONUS question 
 
-  Get names of KEs based on ids through federated query to AOP wiki
+For each KE, can you find out which AOP it belongs to and what the associated AO is, using AOP wiki
   
   ```SPARQL
   PREFIX dcterms: <http://purl.org/dc/terms/>
