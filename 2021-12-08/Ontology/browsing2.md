@@ -30,14 +30,14 @@ So, we start with the ontology term code for the nanomaterial we looked up in Ex
 This part is about the original eNanoMapper database instance, set up by the
 [eNanoMapper](http://enanomapper.net/) project.
 
-* Step 1: Visit [https://data.enanomapper.net/](https://data.enanomapper.net/)
-* Step 2: Search `ENM_9000074`
+* Step 1: Visit [https://search.data.enanomapper.net/projects/enanomapper/](https://search.data.enanomapper.net/projects/enanomapper/)
+* Step 2: Search `ENM_9000080`
 
 #### Questions
 
 1. How many entries are found when searching with this ontology term? <button onclick="toggleAnswer('q1')">Answer</button><span id="q1" style="visibility: hidden">One</span>
-2. And what if we search for the more general `NPO_1486` for titanium oxide nanoparticle? <button onclick="toggleAnswer('q2')">Answer</button><span id="q2" style="visibility: hidden">This finds 80 nanomaterials.</span>
-3. And how many for `ENM_9000080`?<button onclick="toggleAnswer('q3')">Answer</button><span id="q3" style="visibility: hidden">Two materials, https://data.enanomapper.net/substance/ENM3-d4c0bc69-bdaf-372f-b8c4-73ea0c8f5a06, which came from a EU NSC Young Scientist conference contribution. And https://search.data.enanomapper.net/projects/enanomapper/study/?substanceUri=https%3A%2F%2Fdata.enanomapper.net%2Fsubstance%2FNWKI-78f103d7-ca6c-3515-acdf-c504d48c96f9, which came from NanoWiki.</span>
+2. And what if we search for the more general `NPO_1486` for titanium oxide nanoparticle? <button onclick="toggleAnswer('q2')">Answer</button><span id="q2" style="visibility: hidden">This finds 128 nanomaterials.</span>
+3. And how many for `ENM_9000081`?<button onclick="toggleAnswer('q3')">Answer</button><span id="q3" style="visibility: hidden">One material, https://data.enanomapper.net/substance/ENM3-4f88aed1-bf27-30fe-a489-0f48d01833e0, which came from a EU NSC Young Scientist conference contribution. And https://search.data.enanomapper.net/projects/enanomapper/study/?substanceUri=https%3A%2F%2Fdata.enanomapper.net%2Fsubstance%2FENM3-4f88aed1-bf27-30fe-a489-0f48d01833e0, which came from NanoWiki.</span>
 
 ### NANoREG
 
