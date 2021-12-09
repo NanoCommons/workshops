@@ -75,9 +75,9 @@ When done, explain your solution with your neighbor (peer review) and consider s
 to the eNanoMapper ontology. For this, and this is optional but very much appreciated (and
 please do ask for help from the Workshop assistants), do:
 
-* Step 6: Visit https://github.com/ and log in
-* Step 7: Go to https://github.com/enanomapper/ontologies (and scan the README text)
-* Step 8: Got to https://github.com/enanomapper/ontologies/blob/master/internal/npo-ext.owl
+* Step 6: Visit [https://github.com/](https://github.com/) and log in
+* Step 7: Go to [https://github.com/enanomapper/ontologies](https://github.com/enanomapper/ontologies) (and scan the README text)
+* Step 8: Got to [https://github.com/enanomapper/ontologies/blob/master/internal/npo-ext.owl](https://github.com/enanomapper/ontologies/blob/master/internal/npo-ext.owl)
 * Step 9: Look for the `Edit this file` link and click it
 * Step 10: An editor will open, and you can add your contribution somewhere to this file.
 * Step 11: When done, prepare the patch by scrolling to the bottom and adding a description of your work. The section
