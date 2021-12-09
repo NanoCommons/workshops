@@ -61,7 +61,7 @@ items (or, if you prefer, for a nanomaterial you worked on yourself and that is 
 ```
 
 * Step 2: update the IRI and replace `ENM_9000245` with `ENM_9000xxx` (the ontology code will be assigned
-  then your contribution gets incorporated into the released ontology)
+  when your contribution gets incorporated into the released ontology)
 * Step 3: replace the `npo-ext:code`, `rdfs:label`, and `synonym`
 * Step 4: look up in the eNanoMapper ontology which more general ontology class is suitable for your
   materials, e.g. the IRI for
