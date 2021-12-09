@@ -46,8 +46,8 @@ This part is about the original eNanoMapper database instance, set up by the
 
 #### Questions
 
-1. How many entries are found when searching with this ontology term? <button onclick="toggleAnswer('q4')">Answer</button><span id="q4" style="visibility: hidden">Also one</span>
-2. And what if we search for the more general `NPO_1486` for titanium oxide nanoparticle? <button onclick="toggleAnswer('q5')">Answer</button><span id="q5" style="visibility: hidden">This finds 7 nanomaterials.</span>
+1. How many entries are found when searching with this ontology term? <button onclick="toggleAnswer('q4')">Answer</button><span id="q4" style="visibility: hidden">None</span>
+2. And what if we search for the more general `NPO_1486` for titanium oxide nanoparticle? <button onclick="toggleAnswer('q5')">Answer</button><span id="q5" style="visibility: hidden">This finds 18 nanomaterials.</span>
 
 ---
 
