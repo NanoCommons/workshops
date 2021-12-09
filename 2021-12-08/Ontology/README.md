@@ -5,6 +5,10 @@
 Material for the **Introduction to ontologies** part of the
 **Nanosafety and the semantic web** workshop, organized by various projects, 8-9 December 2021.
 
+Lecture:
+
+* Willighagen, Egon, & Winckers, Laurent. (2021, December 9). Ontologies to support FAIR research output. Zenodo. [https://doi.org/10.5281/zenodo.5770213](https://doi.org/10.5281/zenodo.5770213)
+
 Go to [https://nanocommons.github.io/workshops/2021-12-08/Ontology/](https://nanocommons.github.io/workshops/2021-12-08/Ontology/)
 
 ---
