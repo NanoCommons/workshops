@@ -31,16 +31,14 @@ But for this paper, the following nanomaterials are still missing:
 * MnO nanoparticle
 
 Of course, first it must be checked if the NanoParticle Ontology and eNanoMapper Ontology indeed do
-not contain these materials (check
-[here]() and
-[here]() as described in [Exercise 1](browsing.md)), and if they do not, they need to be added.
+not contain these materials, and if they do not, they need to be added.
 
 ### Tasks
 
 The goal of this part of the workshop is to develop an OWL Class definition for one of the missing
 items (or, if you prefer, for a nanomaterial you worked on yourself and that is missing).
 
-* Step 1: copy/paste the OWL Class definition (see []()):
+* Step 1: copy/paste the OWL Class definition):
 
 ```xml
 <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000245">
