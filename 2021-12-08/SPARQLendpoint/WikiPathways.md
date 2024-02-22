@@ -67,13 +67,13 @@ When copying this SPARQL query and executing it, you will find that the WikiPath
 
 
 ### Exercise 3 - More detailed exploration
-With this exercise, the RDF will be explored a little more extensively. By combining statements in the RDF query, we can link multiple subjects and filter for content that we want to get back from the service. Important: when filtering for a literal (gene label, organism, etc.) the literal should have the following format:  "text"xsd:string. For example, the next query returns the title for pathway with ID WP1560:
+With this exercise, the RDF will be explored a little more extensively. By combining statements in the RDF query, we can link multiple subjects and filter for content that we want to get back from the service. For example, the next query returns the title for pathway with ID WP1560:
 
 ```sparql
 SELECT ?pathwaytitle WHERE{
     ?pathway a wp:Pathway .
     ?pathway dc:title ?pathwaytitle .
-    ?pathway dcterms:identifier "WP4868"^^xsd:string .
+    ?pathway dcterms:identifier "WP4868" .
 }
 ```
 
